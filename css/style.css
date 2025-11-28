@@ -1,0 +1,112 @@
+
+---
+
+## 🎨 Fichier `cv_style.css` (à mettre dans le même dossier)
+
+Crée un fichier nommé `cv_style.css` :
+
+```css
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2C3E50;
+  background-color: #ffffff;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #34495E;
+}
+
+a {
+  color: #1A73E8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  background-color: #2C3E50 !important;
+  border: none;
+}
+
+.navbar a {
+  color: #ecf0f1 !important;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table th {
+  background-color: #f4f4f4;
+}
+
+.timeline {
+  border-left: 4px solid #3498db;
+  margin: 20px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background-color: #3498db;
+  border-radius: 5px;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-year {
+  font-weight: bold;
+  color: #3498db;
+  margin-bottom: 5px;
+}
+
+.timeline-content {
+  background: #f9f9f9;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border-left: 3px solid #3498db;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.tabbable > .nav-tabs {
+  border: none;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.nav-tabs > li > a {
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin-right: 5px;
+  border: 1px solid #dee2e6;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
